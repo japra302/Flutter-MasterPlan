@@ -2,9 +2,10 @@
 
 A new Flutter project - Managing State in Flutter
 
-## GIF 
-PRAKTIKUM 1
+## GIF PRAKTIKUM 1
+
 ![Demo Praktikum](GIF/praktikum1.gif)
+
 
 ## Praktikum 1
 

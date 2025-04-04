@@ -1,4 +1,4 @@
-# masterplan
+![image](https://github.com/user-attachments/assets/e5275e64-e7d9-4167-8bf6-b42ffc920abb)# masterplan
 
 A new Flutter project - Managing State in Flutter
 
@@ -9,6 +9,10 @@ A new Flutter project - Managing State in Flutter
 ## GIF PRAKTIKUM 2
 
 ![Demo Praktikum](GIF/praktikum2.gif)
+
+## GIF PRAKTIKUM 3
+
+![Demo Praktikum](GIF/praktikum3.gif)
 
 ## SOAL PRAKTIKUM DAN JAWABAN
 ## SOAL
@@ -28,6 +32,12 @@ Tugas Praktikum 2: InheritedWidget
 2.  Jelaskan mana yang dimaksud InheritedWidget pada langkah 1 tersebut! Mengapa yang digunakan InheritedNotifier?
 3.  Jelaskan maksud dari method di langkah 3 pada praktikum tersebut! Mengapa dilakukan demikian?
 4.  Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
+
+
+Tugas Praktikum 3: State di Multiple Screens
+1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil akhir praktikum beserta penjelasannya di file README.md! Jika Anda menemukan ada yang error atau tidak berjalan dengan baik, silahkan diperbaiki sesuai dengan tujuan aplikasi tersebut dibuat.
+2. Berdasarkan Praktikum 3 yang telah Anda lakukan, jelaskan maksud dari gambar diagram berikut ini!
+3. Lakukan capture hasil dari Langkah 14 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
 
 
 
@@ -147,6 +157,46 @@ Digunakan untuk membersihkan resource:
 📌 Dipanggil **saat widget dihapus** dari tree.
 
 ---
+
+
+Jawaban Praktikum 3
+
+# Dokumentasi Praktikum 3: State di Multiple Screens
+
+## 1. Hasil Praktikum dan Perbaikan
+Pada praktikum ini, telah diimplementasikan pengelolaan state menggunakan `InheritedNotifier<ValueNotifier<List<Plan>>>` untuk menyimpan daftar rencana (Plan) dan tugas-tugasnya (Task). Aplikasi memungkinkan pengguna untuk:
+- Menambahkan rencana baru melalui `PlanCreatorScreen`.
+- Menavigasi ke `PlanScreen` untuk melihat dan mengelola tugas dalam rencana tersebut.
+- Menambahkan, mengedit, dan menandai tugas sebagai selesai.
+
+Perbaikan yang telah dilakukan:
+- Menyimpan nilai input saat mengetik di `TextField` agar tidak hilang saat rebuild.
+- Menjaga fokus saat mengetik di `TextField`.
+- Memastikan tugas bisa ditambahkan dan dicentang lebih dari satu.
+
+Hasil akhir telah diuji dan didokumentasikan dalam bentuk GIF.
+
+---
+
+## 2. Penjelasan Diagram Navigasi
+Diagram menunjukkan alur navigasi aplikasi:
+- `MaterialApp` pertama kali menampilkan `PlanCreatorScreen` yang berisi `TextField` untuk menambahkan rencana baru dan `ListView` untuk menampilkan daftar rencana yang ada.
+- Saat pengguna memilih rencana dari daftar, aplikasi melakukan `Navigator.push` untuk membuka `PlanScreen`.
+- `PlanScreen` menampilkan daftar tugas dari rencana yang dipilih. Struktur `PlanScreen` menggunakan `Column`, dengan daftar tugas di dalam `Expanded` dan informasi status rencana di dalam `SafeArea`.
+
+Diagram ini menggambarkan bagaimana state dipertahankan melalui navigasi dan bagaimana UI berubah berdasarkan hierarki widget yang berbeda.
+
+---
+
+## 3. Hasil Langkah 14 (Capture GIF)
+Pada langkah 14, telah dibuat fitur daftar rencana (Master Plans) yang memungkinkan pengguna:
+- Menambahkan rencana baru melalui `TextField`.
+- Menampilkan daftar rencana dalam `ListView`.
+- Menavigasi ke layar `PlanScreen` dengan menampilkan tugas-tugas dalam rencana tersebut.
+- Menambahkan tugas baru dan menandai tugas yang sudah selesai.
+
+Hasil ini telah dicapture dalam bentuk GIF untuk mendokumentasikan bagaimana pengguna berinteraksi dengan aplikasi.
+
 
 
 

@@ -1,5 +1,3 @@
-![image](https://github.com/user-attachments/assets/e5275e64-e7d9-4167-8bf6-b42ffc920abb)# masterplan
-
 A new Flutter project - Managing State in Flutter
 
 ## GIF PRAKTIKUM 1

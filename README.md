@@ -2,9 +2,10 @@
 
 A new Flutter project - Managing State in Flutter
 
-## GIF 
-PRAKTIKUM 1
-https://github.com/user-attachments/assets/39f42d46-ce8b-492e-af7a-1e282d223b16
+## GIF PRAKTIKUM 1
+
+![Demo Praktikum](GIF/praktikum1.gif)
+
 
 ## Praktikum 1
 
